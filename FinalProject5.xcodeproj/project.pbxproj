@@ -7,21 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70457AF1B210D682988F65CE /* Pods_FinalProject5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1328ED00CF52C497A70EB35 /* Pods_FinalProject5.framework */; };
+		E503B9C12079657800B899F4 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503B9BF2079657800B899F4 /* PostTableViewCell.swift */; };
+		E503B9C22079657800B899F4 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E503B9C02079657800B899F4 /* PostTableViewCell.xib */; };
+		E503B9C920796C8F00B899F4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503B9C820796C8F00B899F4 /* Post.swift */; };
+		E503B9CF2079815500B899F4 /* MajorPollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503B9CE2079815500B899F4 /* MajorPollVC.swift */; };
+		E503B9D12079819E00B899F4 /* NewMajorPollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503B9D02079819E00B899F4 /* NewMajorPollVC.swift */; };
+		E5081AAF2086B6A30033707D /* Majors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5081AAE2086B6A30033707D /* Majors.swift */; };
+		E51DE5A6208D01560026BF47 /* GeneralPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51DE5A5208D01560026BF47 /* GeneralPostTableViewCell.swift */; };
+		E51DE5AB208D284B0026BF47 /* GeneralPollDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51DE5AA208D284B0026BF47 /* GeneralPollDetailVC.swift */; };
+		E51DE693207E9BCE00A58CD0 /* VerifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51DE692207E9BCE00A58CD0 /* VerifyVC.swift */; };
+		E51DE695207E9CA900A58CD0 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51DE694207E9CA900A58CD0 /* DataHandler.swift */; };
+		E543FD6B208D8C5F00B09CED /* MessagingDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E543FD6A208D8C5F00B09CED /* MessagingDetailVC.swift */; };
+		E543FD6D208D949C00B09CED /* NewClassPollVC02.swift in Sources */ = {isa = PBXBuildFile; fileRef = E543FD6C208D949C00B09CED /* NewClassPollVC02.swift */; };
+		E55C9A7A20898FF50087EEF9 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C9A7920898FF50087EEF9 /* Classes.swift */; };
+		E55C9A7C208991870087EEF9 /* ClassesPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C9A7B208991870087EEF9 /* ClassesPostTableViewCell.swift */; };
+		E55C9A7E2089934B0087EEF9 /* ClassPollDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C9A7D2089934B0087EEF9 /* ClassPollDetailVC.swift */; };
+		E5720ACD208FFED9000B02C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5720ACC208FFED9000B02C1 /* User.swift */; };
+		E573C4EB20911CB300C26EE0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573C4EA20911CB300C26EE0 /* WelcomeViewController.swift */; };
+		E573C4ED2091235D00C26EE0 /* ReplyToGeneralPollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573C4EC2091235D00C26EE0 /* ReplyToGeneralPollViewController.swift */; };
+		E573C4EF20917CBA00C26EE0 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573C4EE20917CBA00C26EE0 /* CommentCell.swift */; };
+		E573C4F120917D7D00C26EE0 /* CommentsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573C4F020917D7D00C26EE0 /* CommentsTableVC.swift */; };
+		E5991E12208BD44C00B7A8D0 /* majorSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5991E11208BD44C00B7A8D0 /* majorSelection.swift */; };
+		E5991E17208BDBDB00B7A8D0 /* GeneralPollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5991E16208BDBDB00B7A8D0 /* GeneralPollVC.swift */; };
+		E5991E19208BDC2C00B7A8D0 /* NewGeneralPollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5991E18208BDC2C00B7A8D0 /* NewGeneralPollVC.swift */; };
+		E5991E1D208BEC4800B7A8D0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5991E1C208BEC4800B7A8D0 /* SignUpViewController.swift */; };
+		E5991E1F208C250C00B7A8D0 /* GeneralPoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5991E1E208C250C00B7A8D0 /* GeneralPoll.swift */; };
+		E5991E21208C251700B7A8D0 /* GeneralPolls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5991E20208C251700B7A8D0 /* GeneralPolls.swift */; };
+		E5A047AA20900C990026AC11 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A047A920900C990026AC11 /* Users.swift */; };
+		E5A047AC20901AC70026AC11 /* GeneralPollTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A047AB20901AC70026AC11 /* GeneralPollTableViewController.swift */; };
+		E5A047B020901B130026AC11 /* GeneralPostTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A047AF20901B130026AC11 /* GeneralPostTableViewCell2.swift */; };
+		E5A047B220901EA50026AC11 /* AppMessengerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A047B120901EA50026AC11 /* AppMessengerVC.swift */; };
+		E5A9517B208E845500B82377 /* NewClassPollVCFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9517A208E845500B82377 /* NewClassPollVCFinal.swift */; };
+		E5B30D3B2085915100B521E4 /* NewMajorPollVC02.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B30D3A2085915100B521E4 /* NewMajorPollVC02.swift */; };
+		E5B30D3D2085926B00B521E4 /* Major.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B30D3C2085926B00B521E4 /* Major.swift */; };
+		E5B30D3F208592AF00B521E4 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B30D3E208592AF00B521E4 /* Class.swift */; };
+		E5B73DAB208E678B00540CD4 /* PreMajorPollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B73DAA208E678B00540CD4 /* PreMajorPollViewController.swift */; };
+		E5B9C0D920893B3C00B75BAB /* MajorPollDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9C0D820893B3C00B75BAB /* MajorPollDetailVC.swift */; };
 		E5E74B0D2076A98800F4F09B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E74B0C2076A98800F4F09B /* AppDelegate.swift */; };
-		E5E74B0F2076A98800F4F09B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E74B0E2076A98800F4F09B /* ViewController.swift */; };
+		E5E74B0F2076A98800F4F09B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E74B0E2076A98800F4F09B /* InitialViewController.swift */; };
 		E5E74B122076A98800F4F09B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E74B102076A98800F4F09B /* Main.storyboard */; };
 		E5E74B142076A98800F4F09B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E74B132076A98800F4F09B /* Assets.xcassets */; };
 		E5E74B172076A98800F4F09B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E74B152076A98800F4F09B /* LaunchScreen.storyboard */; };
+		E5E74B1F2076A9A600F4F09B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5E74B1E2076A9A600F4F09B /* GoogleService-Info.plist */; };
+		E5E74B212076ADC300F4F09B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E74B202076ADC300F4F09B /* HomeVC.swift */; };
+		E5E74B232076B77300F4F09B /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E74B222076B77300F4F09B /* FirebaseManager.swift */; };
+		E5E74B482076D45700F4F09B /* ClassPollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E74B472076D45700F4F09B /* ClassPollVC.swift */; };
+		E5E74B4A2076D48F00F4F09B /* NewClassPollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E74B492076D48F00F4F09B /* NewClassPollVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43F20D172C00D70EBBFC7D84 /* Pods-FinalProject5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject5/Pods-FinalProject5.debug.xcconfig"; sourceTree = "<group>"; };
+		784C37D6F28B350CAC0978D1 /* Pods-FinalProject5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject5.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject5/Pods-FinalProject5.release.xcconfig"; sourceTree = "<group>"; };
+		E1328ED00CF52C497A70EB35 /* Pods_FinalProject5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProject5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E503B9BF2079657800B899F4 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		E503B9C02079657800B899F4 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		E503B9C820796C8F00B899F4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E503B9CE2079815500B899F4 /* MajorPollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorPollVC.swift; sourceTree = "<group>"; };
+		E503B9D02079819E00B899F4 /* NewMajorPollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMajorPollVC.swift; sourceTree = "<group>"; };
+		E5081AAE2086B6A30033707D /* Majors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Majors.swift; sourceTree = "<group>"; };
+		E51DE5A5208D01560026BF47 /* GeneralPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPostTableViewCell.swift; sourceTree = "<group>"; };
+		E51DE5AA208D284B0026BF47 /* GeneralPollDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPollDetailVC.swift; sourceTree = "<group>"; };
+		E51DE692207E9BCE00A58CD0 /* VerifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyVC.swift; sourceTree = "<group>"; };
+		E51DE694207E9CA900A58CD0 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		E543FD6A208D8C5F00B09CED /* MessagingDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingDetailVC.swift; sourceTree = "<group>"; };
+		E543FD6C208D949C00B09CED /* NewClassPollVC02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassPollVC02.swift; sourceTree = "<group>"; };
+		E55C9A7920898FF50087EEF9 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		E55C9A7B208991870087EEF9 /* ClassesPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesPostTableViewCell.swift; sourceTree = "<group>"; };
+		E55C9A7D2089934B0087EEF9 /* ClassPollDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassPollDetailVC.swift; sourceTree = "<group>"; };
+		E5720ACC208FFED9000B02C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E573C4EA20911CB300C26EE0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E573C4EC2091235D00C26EE0 /* ReplyToGeneralPollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyToGeneralPollViewController.swift; sourceTree = "<group>"; };
+		E573C4EE20917CBA00C26EE0 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		E573C4F020917D7D00C26EE0 /* CommentsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableVC.swift; sourceTree = "<group>"; };
+		E5991E11208BD44C00B7A8D0 /* majorSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = majorSelection.swift; sourceTree = "<group>"; };
+		E5991E16208BDBDB00B7A8D0 /* GeneralPollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPollVC.swift; sourceTree = "<group>"; };
+		E5991E18208BDC2C00B7A8D0 /* NewGeneralPollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGeneralPollVC.swift; sourceTree = "<group>"; };
+		E5991E1C208BEC4800B7A8D0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E5991E1E208C250C00B7A8D0 /* GeneralPoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPoll.swift; sourceTree = "<group>"; };
+		E5991E20208C251700B7A8D0 /* GeneralPolls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPolls.swift; sourceTree = "<group>"; };
+		E5A047A920900C990026AC11 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		E5A047AB20901AC70026AC11 /* GeneralPollTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPollTableViewController.swift; sourceTree = "<group>"; };
+		E5A047AF20901B130026AC11 /* GeneralPostTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPostTableViewCell2.swift; sourceTree = "<group>"; };
+		E5A047B120901EA50026AC11 /* AppMessengerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMessengerVC.swift; sourceTree = "<group>"; };
+		E5A9517A208E845500B82377 /* NewClassPollVCFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassPollVCFinal.swift; sourceTree = "<group>"; };
+		E5B30D3A2085915100B521E4 /* NewMajorPollVC02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMajorPollVC02.swift; sourceTree = "<group>"; };
+		E5B30D3C2085926B00B521E4 /* Major.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Major.swift; sourceTree = "<group>"; };
+		E5B30D3E208592AF00B521E4 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		E5B73DAA208E678B00540CD4 /* PreMajorPollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreMajorPollViewController.swift; sourceTree = "<group>"; };
+		E5B9C0D820893B3C00B75BAB /* MajorPollDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorPollDetailVC.swift; sourceTree = "<group>"; };
 		E5E74B092076A98800F4F09B /* FinalProject5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E74B0C2076A98800F4F09B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5E74B0E2076A98800F4F09B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5E74B0E2076A98800F4F09B /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		E5E74B112076A98800F4F09B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5E74B132076A98800F4F09B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5E74B162076A98800F4F09B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5E74B182076A98800F4F09B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E74B1E2076A9A600F4F09B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5E74B202076ADC300F4F09B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		E5E74B222076B77300F4F09B /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		E5E74B472076D45700F4F09B /* ClassPollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassPollVC.swift; sourceTree = "<group>"; };
+		E5E74B492076D48F00F4F09B /* NewClassPollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassPollVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +115,109 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70457AF1B210D682988F65CE /* Pods_FinalProject5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		440CBAA65AA7DFFF55BD80BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43F20D172C00D70EBBFC7D84 /* Pods-FinalProject5.debug.xcconfig */,
+				784C37D6F28B350CAC0978D1 /* Pods-FinalProject5.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E328B17BE5AE6741B333C523 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1328ED00CF52C497A70EB35 /* Pods_FinalProject5.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E503B9C720796C7A00B899F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E503B9C02079657800B899F4 /* PostTableViewCell.xib */,
+				E503B9C820796C8F00B899F4 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E51DE5A9208D1C0D0026BF47 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E5E74B202076ADC300F4F09B /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E53EECD320882D6E00B5C443 /* MajorPoll */ = {
+			isa = PBXGroup;
+			children = (
+				E5B73DAA208E678B00540CD4 /* PreMajorPollViewController.swift */,
+				E5991E11208BD44C00B7A8D0 /* majorSelection.swift */,
+				E503B9CE2079815500B899F4 /* MajorPollVC.swift */,
+				E5B9C0D820893B3C00B75BAB /* MajorPollDetailVC.swift */,
+				E503B9D02079819E00B899F4 /* NewMajorPollVC.swift */,
+				E5B30D3A2085915100B521E4 /* NewMajorPollVC02.swift */,
+				E5081AAE2086B6A30033707D /* Majors.swift */,
+				E5B30D3C2085926B00B521E4 /* Major.swift */,
+			);
+			path = MajorPoll;
+			sourceTree = "<group>";
+		};
+		E53EECD520882DBE00B5C443 /* ClassPoll */ = {
+			isa = PBXGroup;
+			children = (
+				E5E74B472076D45700F4F09B /* ClassPollVC.swift */,
+				E55C9A7D2089934B0087EEF9 /* ClassPollDetailVC.swift */,
+				E5E74B492076D48F00F4F09B /* NewClassPollVC.swift */,
+				E543FD6C208D949C00B09CED /* NewClassPollVC02.swift */,
+				E5A9517A208E845500B82377 /* NewClassPollVCFinal.swift */,
+				E573C4F020917D7D00C26EE0 /* CommentsTableVC.swift */,
+				E573C4EE20917CBA00C26EE0 /* CommentCell.swift */,
+				E55C9A7920898FF50087EEF9 /* Classes.swift */,
+				E5B30D3E208592AF00B521E4 /* Class.swift */,
+			);
+			path = ClassPoll;
+			sourceTree = "<group>";
+		};
+		E53EECD82088355800B5C443 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				E5A047B120901EA50026AC11 /* AppMessengerVC.swift */,
+				E543FD6A208D8C5F00B09CED /* MessagingDetailVC.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		E5991E15208BDB3A00B7A8D0 /* GeneralPoll */ = {
+			isa = PBXGroup;
+			children = (
+				E5991E16208BDBDB00B7A8D0 /* GeneralPollVC.swift */,
+				E5991E18208BDC2C00B7A8D0 /* NewGeneralPollVC.swift */,
+				E51DE5AA208D284B0026BF47 /* GeneralPollDetailVC.swift */,
+				E573C4EC2091235D00C26EE0 /* ReplyToGeneralPollViewController.swift */,
+				E5991E20208C251700B7A8D0 /* GeneralPolls.swift */,
+				E5991E1E208C250C00B7A8D0 /* GeneralPoll.swift */,
+				E5A047AB20901AC70026AC11 /* GeneralPollTableViewController.swift */,
+				E5A047AF20901B130026AC11 /* GeneralPostTableViewCell2.swift */,
+			);
+			path = GeneralPoll;
+			sourceTree = "<group>";
+		};
 		E5E74B002076A98700F4F09B = {
 			isa = PBXGroup;
 			children = (
 				E5E74B0B2076A98800F4F09B /* FinalProject5 */,
 				E5E74B0A2076A98800F4F09B /* Products */,
+				440CBAA65AA7DFFF55BD80BA /* Pods */,
+				E328B17BE5AE6741B333C523 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +233,28 @@
 			isa = PBXGroup;
 			children = (
 				E5E74B0C2076A98800F4F09B /* AppDelegate.swift */,
-				E5E74B0E2076A98800F4F09B /* ViewController.swift */,
 				E5E74B102076A98800F4F09B /* Main.storyboard */,
+				E5E74B222076B77300F4F09B /* FirebaseManager.swift */,
+				E573C4EA20911CB300C26EE0 /* WelcomeViewController.swift */,
+				E51DE694207E9CA900A58CD0 /* DataHandler.swift */,
+				E51DE692207E9BCE00A58CD0 /* VerifyVC.swift */,
+				E5E74B0E2076A98800F4F09B /* InitialViewController.swift */,
+				E5991E1C208BEC4800B7A8D0 /* SignUpViewController.swift */,
+				E5A047A920900C990026AC11 /* Users.swift */,
+				E5720ACC208FFED9000B02C1 /* User.swift */,
+				E51DE5A9208D1C0D0026BF47 /* Home */,
+				E5991E15208BDB3A00B7A8D0 /* GeneralPoll */,
+				E53EECD320882D6E00B5C443 /* MajorPoll */,
+				E53EECD520882DBE00B5C443 /* ClassPoll */,
+				E503B9BF2079657800B899F4 /* PostTableViewCell.swift */,
+				E55C9A7B208991870087EEF9 /* ClassesPostTableViewCell.swift */,
+				E51DE5A5208D01560026BF47 /* GeneralPostTableViewCell.swift */,
+				E53EECD82088355800B5C443 /* Messaging */,
+				E503B9C720796C7A00B899F4 /* Models */,
 				E5E74B132076A98800F4F09B /* Assets.xcassets */,
-				E5E74B152076A98800F4F09B /* LaunchScreen.storyboard */,
 				E5E74B182076A98800F4F09B /* Info.plist */,
+				E5E74B1E2076A9A600F4F09B /* GoogleService-Info.plist */,
+				E5E74B152076A98800F4F09B /* LaunchScreen.storyboard */,
 			);
 			path = FinalProject5;
 			sourceTree = "<group>";
@@ -71,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5E74B1B2076A98800F4F09B /* Build configuration list for PBXNativeTarget "FinalProject5" */;
 			buildPhases = (
+				29311A3A35A1BEB45A432A94 /* [CP] Check Pods Manifest.lock */,
 				E5E74B052076A98800F4F09B /* Sources */,
 				E5E74B062076A98800F4F09B /* Frameworks */,
 				E5E74B072076A98800F4F09B /* Resources */,
+				F65B44316C7227B5BEBAB0FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +321,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5E74B172076A98800F4F09B /* LaunchScreen.storyboard in Resources */,
+				E503B9C22079657800B899F4 /* PostTableViewCell.xib in Resources */,
+				E5E74B1F2076A9A600F4F09B /* GoogleService-Info.plist in Resources */,
 				E5E74B142076A98800F4F09B /* Assets.xcassets in Resources */,
 				E5E74B122076A98800F4F09B /* Main.storyboard in Resources */,
 			);
@@ -131,13 +330,113 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29311A3A35A1BEB45A432A94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinalProject5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F65B44316C7227B5BEBAB0FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FinalProject5/Pods-FinalProject5-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinalProject5/Pods-FinalProject5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E5E74B052076A98800F4F09B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E74B0F2076A98800F4F09B /* ViewController.swift in Sources */,
+				E503B9C12079657800B899F4 /* PostTableViewCell.swift in Sources */,
+				E5E74B232076B77300F4F09B /* FirebaseManager.swift in Sources */,
+				E543FD6D208D949C00B09CED /* NewClassPollVC02.swift in Sources */,
+				E5E74B212076ADC300F4F09B /* HomeVC.swift in Sources */,
+				E503B9C920796C8F00B899F4 /* Post.swift in Sources */,
+				E5991E21208C251700B7A8D0 /* GeneralPolls.swift in Sources */,
+				E573C4EB20911CB300C26EE0 /* WelcomeViewController.swift in Sources */,
+				E55C9A7C208991870087EEF9 /* ClassesPostTableViewCell.swift in Sources */,
+				E5B30D3D2085926B00B521E4 /* Major.swift in Sources */,
+				E5081AAF2086B6A30033707D /* Majors.swift in Sources */,
+				E51DE5AB208D284B0026BF47 /* GeneralPollDetailVC.swift in Sources */,
+				E5B9C0D920893B3C00B75BAB /* MajorPollDetailVC.swift in Sources */,
+				E5B30D3B2085915100B521E4 /* NewMajorPollVC02.swift in Sources */,
+				E5991E12208BD44C00B7A8D0 /* majorSelection.swift in Sources */,
+				E51DE695207E9CA900A58CD0 /* DataHandler.swift in Sources */,
+				E573C4EF20917CBA00C26EE0 /* CommentCell.swift in Sources */,
+				E5991E17208BDBDB00B7A8D0 /* GeneralPollVC.swift in Sources */,
+				E5991E1F208C250C00B7A8D0 /* GeneralPoll.swift in Sources */,
+				E5E74B482076D45700F4F09B /* ClassPollVC.swift in Sources */,
+				E5E74B0F2076A98800F4F09B /* InitialViewController.swift in Sources */,
+				E503B9D12079819E00B899F4 /* NewMajorPollVC.swift in Sources */,
+				E5A047AC20901AC70026AC11 /* GeneralPollTableViewController.swift in Sources */,
+				E5991E19208BDC2C00B7A8D0 /* NewGeneralPollVC.swift in Sources */,
+				E5A9517B208E845500B82377 /* NewClassPollVCFinal.swift in Sources */,
+				E55C9A7A20898FF50087EEF9 /* Classes.swift in Sources */,
 				E5E74B0D2076A98800F4F09B /* AppDelegate.swift in Sources */,
+				E5720ACD208FFED9000B02C1 /* User.swift in Sources */,
+				E5B30D3F208592AF00B521E4 /* Class.swift in Sources */,
+				E573C4ED2091235D00C26EE0 /* ReplyToGeneralPollViewController.swift in Sources */,
+				E503B9CF2079815500B899F4 /* MajorPollVC.swift in Sources */,
+				E5A047B220901EA50026AC11 /* AppMessengerVC.swift in Sources */,
+				E5A047AA20900C990026AC11 /* Users.swift in Sources */,
+				E5E74B4A2076D48F00F4F09B /* NewClassPollVC.swift in Sources */,
+				E51DE5A6208D01560026BF47 /* GeneralPostTableViewCell.swift in Sources */,
+				E5A047B020901B130026AC11 /* GeneralPostTableViewCell2.swift in Sources */,
+				E51DE693207E9BCE00A58CD0 /* VerifyVC.swift in Sources */,
+				E5991E1D208BEC4800B7A8D0 /* SignUpViewController.swift in Sources */,
+				E5B73DAB208E678B00540CD4 /* PreMajorPollViewController.swift in Sources */,
+				E543FD6B208D8C5F00B09CED /* MessagingDetailVC.swift in Sources */,
+				E55C9A7E2089934B0087EEF9 /* ClassPollDetailVC.swift in Sources */,
+				E573C4F120917D7D00C26EE0 /* CommentsTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,31 +571,35 @@
 		};
 		E5E74B1C2076A98800F4F09B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43F20D172C00D70EBBFC7D84 /* Pods-FinalProject5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PZCR459VC4;
 				INFOPLIST_FILE = FinalProject5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bc.edu.kimcwa.FinalProject5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E5E74B1D2076A98800F4F09B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 784C37D6F28B350CAC0978D1 /* Pods-FinalProject5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PZCR459VC4;
 				INFOPLIST_FILE = FinalProject5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bc.edu.kimcwa.FinalProject5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
