@@ -38,9 +38,8 @@ class NewClassPollVCFinal: UIViewController, UITextViewDelegate {
     }
 
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
-//        self.dismiss(animated: true, completion: nil)
-        performSegue(withIdentifier: "toClassPollVC", sender: nil)
-
+        self.dismiss(animated: true, completion: nil)
+//        performSegue(withIdentifier: "toClassPollVC", sender: nil)
     }
     
     func leaveViewController() {
