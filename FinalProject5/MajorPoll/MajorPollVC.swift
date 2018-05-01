@@ -29,7 +29,10 @@ class MajorPollVC: UIViewController {
         
         print(majorSelection1)
         
-        self.navigationController?.tabBarController?.hidesBottomBarWhenPushed = false
+//        self.navigationController?.tabBarController?.hidesBottomBarWhenPushed = false
+        
+        tableView.estimatedRowHeight = 60
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,7 +42,7 @@ class MajorPollVC: UIViewController {
         tableView.estimatedRowHeight = 60
         tableView.rowHeight = UITableViewAutomaticDimension
         
-        self.tabBarController?.navigationController?.show(self, sender: nil)
+//        self.tabBarController?.navigationController?.show(self, sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -68,7 +71,7 @@ extension MajorPollVC: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "majorCell", for: indexPath) as! PostTableViewCell
-        cell.layer.cornerRadius = cell.frame.height / 2
+//        cell.layer.cornerRadius = cell.frame.height / 2
 //        cell.layer.cornerRadius = cell.frame.height / 2  THIS MAKES THE CELLS ROUNDED KINDA UGLY THOUGH...
         
 //        cell.usernameLabel.text = majorPosts.majorArray[indexPath.row].username

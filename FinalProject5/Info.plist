@@ -52,5 +52,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Eagle Connect will need to access camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Eagle Connect will need to access photo library</string>
 </dict>
 </plist>

@@ -24,7 +24,9 @@ class ClassPollVC: UIViewController {
 //        classPosts.courseArray.append(Course(username: "BK", userID: "something", BCclass: "Swift Programming", professor: "Gallaugher", post: "Stay Swifty", documentID: "something"))
 //        classPosts.courseArray.append(Course(username: "BK", userID: "something", BCclass: "Multivariable", professor: "Ellen Goldstein", post: "Clairut's Theorem", documentID: "something"))
         
-        self.navigationController?.tabBarController?.hidesBottomBarWhenPushed = false
+//        self.navigationController?.tabBarController?.hidesBottomBarWhenPushed = false
+        tableView.estimatedRowHeight = 60
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,7 +37,7 @@ class ClassPollVC: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         
         
-        self.tabBarController?.navigationController?.show(self, sender: nil)
+//        self.tabBarController?.navigationController?.show(self, sender: nil)
 //        self.navigationController?.tabBarController?.hidesBottomBarWhenPushed = false
     }
     

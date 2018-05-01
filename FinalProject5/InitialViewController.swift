@@ -14,12 +14,26 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var loading: UIActivityIndicatorView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
+        toolbar.setItems([doneButton], animated: true)
+        emailTextField.inputAccessoryView = toolbar
+        passwordTextField.inputAccessoryView = toolbar
+        
     }
+    
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
+    }
+    
     
 //    override func viewDidAppear(_ animated: Bool) {
 //        if let user = Auth.auth().currentUser {
@@ -48,7 +62,8 @@ class ViewController: UIViewController {
     
 
     @IBAction func signInButtonPressed(_ sender: UIButton) {
-
+        loading.isHidden = false
+        loading.startAnimating()
         guard let email = emailTextField.text else {return}
         guard let password = passwordTextField.text else {return}
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
@@ -69,7 +84,7 @@ class ViewController: UIViewController {
                     DispatchQueue.main.async {
                         //self.progress.stopAnimating()
                         self.showErrorAlert(error: FirebaseManager.returnErrorMessages(error: error!))
-                    }
+                        self.loading.isHidden = true                    }
                 }
         }
 }

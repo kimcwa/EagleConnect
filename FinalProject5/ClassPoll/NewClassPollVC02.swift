@@ -13,7 +13,7 @@ class NewClassPollVC02: UIViewController {
     @IBOutlet weak var professorTextField: UITextField!
     @IBOutlet weak var courseLabel: UILabel!
 
-    let professorArray = ["Select Professor", "Bartlett", "Dehghani", "Connolly", "Fox", "Gareau", "Gallaugher", "Goldstein", "Hetzner", "Meng", "Miller", "Mueller" ,"Orson", "Opeil", "Regan", "Richardson", "Vahid", "Wang", "Wolfman", "Uritam"]
+    let professorArray = ["Select Professor","Appel", "Alev","Albuquerque","Anukriti", "Ash", "Azoulay","Baldassare Di Bartolo","Baglivo", "Balduzzi","Baldwin", "Baloria", "Bagnani","Bakshi", "Bartlett","Bartunek", "Barry","Beebe","Bedell","Belding","Biringer", "Bleier","Bogousslavsky","Boynton","Bradshaw","Breeding-Allison", "Broido", "Brasel","Bulgurcu","Burch","Bumin Yenmez", "Cabral","Chambers", "Chan","Chazen","Chemmanur","Chen", "Cheng","Cheung", "Chod","Cioni","Clair","Clote", "Cohen","Cronin", "Connolly", "Dagogo-Jack","Engelbrecht", "Evans","Evenchik","Fedorchuk", "Feldman","Fichman","Field","Fisher","Fos","Friedberg", "Dehghani", "Fox", "Gallaugher","Gallimberti", "Gareau, Tara","Gareau, Brian", "Garrett", "Goldstein","Graf", "Hagtvedt", "Hetzner","Herczynski","Kalman", "Meng", "Miller", "Mueller","Naughton","Neenan", "Orson", "Opeil","Penagos", "Regan", "Richardson", "Vahid", "Wang", "Wolfman", "Uritam"]
     
     var selectedProfessor: String = ""
     var courseSelection: String = ""

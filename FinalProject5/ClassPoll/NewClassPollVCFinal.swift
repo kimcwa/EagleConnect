@@ -36,6 +36,7 @@ class NewClassPollVCFinal: UIViewController, UITextViewDelegate {
         whatOnYourMindLabel.text = ""
         return true
     }
+    
 
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
@@ -51,6 +52,8 @@ class NewClassPollVCFinal: UIViewController, UITextViewDelegate {
         }
         
     }
+    
+    
     
     @IBAction func postButtonPressed(_ sender: UIButton) {
         course.post = postTextView.text

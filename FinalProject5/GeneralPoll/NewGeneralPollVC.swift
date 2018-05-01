@@ -17,7 +17,7 @@ class NewGeneralPollVC: UIViewController, UITextViewDelegate {
     
     var generalPoll: GeneralPoll!
     
-    let subjectArray = ["Select Subject", "Dining", "Clubs/Events", "Promotions", "Research Query","Academic", "Occupation", "Other"]
+    let subjectArray = ["Select Subject", "Clubs/Events", "Dining", "Occupation", "Promotions", "Research Query", "Other"]
     var selectedSubject: String = ""
     
 //    var filteredSubjectArray = [String]()
@@ -30,12 +30,23 @@ class NewGeneralPollVC: UIViewController, UITextViewDelegate {
 //        doneButton.backgroundColor = UIColor.red
         doneButton.layer.cornerRadius = doneButton.bounds.height / 2
         doneButton.clipsToBounds = true
+        
         postTextView.delegate = self
         generalPoll = GeneralPoll()
         
         createSubjectPicker()
         createToolbar()
+        
+//        let toolbar = UIToolbar()
+//        toolbar.sizeToFit()
+//        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
+//        toolbar.setItems([doneButton], animated: true)
+//        postTextView.inputAccessoryView = toolbar
     }
+    
+//    @objc func doneClicked() {
+//        view.endEditing(true)
+//    }
 
     
     @IBAction func doneKeyPressedforsubject(_ sender: UITextField) {

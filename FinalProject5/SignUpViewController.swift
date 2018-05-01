@@ -11,30 +11,104 @@ import Firebase
 import FirebaseAuth
 import FirebaseStorage
 
-class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var loading: UIActivityIndicatorView!
     
 //    var newUser: AppUser!
+    
+    var activeTextField: UITextField!
     
     var imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePicker.delegate = self
         
+        usernameTextField.delegate = self
+        let center: NotificationCenter = NotificationCenter.default;
+        center.addObserver(self, selector: #selector(keyboardDidShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        center.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
-//        newUser = AppUser()
+//        usernameTextField.delegate = self
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
+        toolbar.setItems([doneButton], animated: true)
+        emailTextField.inputAccessoryView = toolbar
+        passwordTextField.inputAccessoryView = toolbar
+        usernameTextField.inputAccessoryView = toolbar
+        
+        loading.isHidden = true
+    }
+    
+//    deinit {
+//        //stop listening for keyboard
+//        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+//        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+//        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+//    }
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
+    }
+    
+//    @objc func keyboardWillChange(notification: Notification) {
+//        print("Keyboard will show \(notification.name.rawValue)")
+//
+//        guard let keyboardRect = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+//            return
+//            }
+//        if notification.name == Notification.Name.UIKeyboardWillShow || notification.name == Notification.Name.UIKeyboardWillChangeFrame {
+//               view.frame.origin.y = -keyboardRect.height
+//        } else {
+//            view.frame.origin.y = 0
+//        }
+//    }
+    
+    @objc func keyboardDidShow(notification: Notification) {
+        let info: NSDictionary = notification.userInfo! as NSDictionary
+        let keyboardSize = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardY = self.view.frame.size.height - keyboardSize.height
+        let editingTextFieldY: CGFloat! = self.usernameTextField!.frame.origin.y
+        if self.view.frame.origin.y >= 0 {
+        if editingTextFieldY > keyboardY - 60 {
+            UIView.animate(withDuration: 0.25, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: { self.view.frame = CGRect(x: 0, y: self.view.frame.origin.y - (editingTextFieldY! - (keyboardY - 60)), width: self.view.bounds.width, height: self.view.bounds.height) }, completion: nil)
+        }
+        }
+    }
+    
+    
+    @objc func keyboardWillHide(notification: Notification) {
+        UIView.animate(withDuration: 0.25, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            self.view.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height)
+            }, completion: nil)
+    }
+    
 
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        activeTextField = textField
+        return true
     }
     
     func showCameraOrPhotoLibraryAlert() {
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
-        let cameraAction = UIAlertAction(title: "Camera", style: .default, handler: nil)
-        let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default, handler: nil)
+        let cameraAction = UIAlertAction(title: "Camera", style: .default) { _ in
+            self.accessCamera()
+            
+        }
+        let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default) {
+            _ in self.accessLibrary()
+        }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alertController.addAction(cameraAction)
         alertController.addAction(photoLibraryAction)
@@ -55,6 +129,20 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    func accessLibrary() {
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func accessCamera() {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            imagePicker.sourceType = .camera
+            present(imagePicker, animated: true, completion: nil)
+        } else {
+            showErrorAlert(error: "Camera not Available")
+        }
     }
     
     func showErrorAlert(error:String){
@@ -93,6 +181,8 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        loading.isHidden = false
+        loading.startAnimating()
         guard let email = emailTextField.text else {return}
         guard let password = passwordTextField.text else {return}
         guard let username = usernameTextField.text else {return}
@@ -121,6 +211,40 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
                     DispatchQueue.main.async {
                         //self.progress.stopAnimating()
                         self.showErrorAlert(error: FirebaseManager.returnErrorMessages(error: error!))
+                        self.loading.isHidden = true
+                    }
+                }
+                guard let img = self.profileImage.image else {
+                    
+                    print("image must be selected")
+                    
+                    return
+                }
+                
+                if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+                    
+                    let imgUid = NSUUID().uuidString
+                    
+                    let metadata = StorageMetadata()
+                    
+                    metadata.contentType = "img/jpeg"
+                    Storage.storage().reference().child(imgUid).putData(imgData, metadata: metadata) { (metadata, error) in
+                        
+                        if error == nil {
+                            
+                            print("did not upload img")
+                            
+                        } else {
+                            
+                            print("uploaded")
+                            
+                            let downloadURl = metadata?.downloadURL()?.absoluteString
+                            
+                            if let url = downloadURl {
+                                let setLocation = Database.database().reference().child("profileImage").child(username)
+                                setLocation.setValue(url)
+                            }
+                        }
                     }
                 }
             }
@@ -128,6 +252,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         }
         else {
             self.showErrorAlert(error: "Make sure you use a valid school email.")
+            loading.isHidden = true
         }
     }
     
