@@ -27,7 +27,7 @@
 		E573C4EB20911CB300C26EE0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573C4EA20911CB300C26EE0 /* WelcomeViewController.swift */; };
 		E573C4ED2091235D00C26EE0 /* ReplyToGeneralPollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573C4EC2091235D00C26EE0 /* ReplyToGeneralPollViewController.swift */; };
 		E573C4EF20917CBA00C26EE0 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573C4EE20917CBA00C26EE0 /* CommentCell.swift */; };
-		E573C4F120917D7D00C26EE0 /* CommentsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573C4F020917D7D00C26EE0 /* CommentsTableVC.swift */; };
+		E574C69820B4663500A95472 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574C69720B4663500A95472 /* Comments.swift */; };
 		E5991E12208BD44C00B7A8D0 /* majorSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5991E11208BD44C00B7A8D0 /* majorSelection.swift */; };
 		E5991E17208BDBDB00B7A8D0 /* GeneralPollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5991E16208BDBDB00B7A8D0 /* GeneralPollVC.swift */; };
 		E5991E19208BDC2C00B7A8D0 /* NewGeneralPollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5991E18208BDC2C00B7A8D0 /* NewGeneralPollVC.swift */; };
@@ -54,6 +54,8 @@
 		E5E74B232076B77300F4F09B /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E74B222076B77300F4F09B /* FirebaseManager.swift */; };
 		E5E74B482076D45700F4F09B /* ClassPollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E74B472076D45700F4F09B /* ClassPollVC.swift */; };
 		E5E74B4A2076D48F00F4F09B /* NewClassPollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E74B492076D48F00F4F09B /* NewClassPollVC.swift */; };
+		E5FCD7DD20ABB030001AF1D6 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FCD7DC20ABB030001AF1D6 /* Comment.swift */; };
+		E5FCD7DF20ABBA2E001AF1D6 /* CourseCommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FCD7DE20ABBA2E001AF1D6 /* CourseCommentsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,7 +81,7 @@
 		E573C4EA20911CB300C26EE0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E573C4EC2091235D00C26EE0 /* ReplyToGeneralPollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyToGeneralPollViewController.swift; sourceTree = "<group>"; };
 		E573C4EE20917CBA00C26EE0 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
-		E573C4F020917D7D00C26EE0 /* CommentsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableVC.swift; sourceTree = "<group>"; };
+		E574C69720B4663500A95472 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		E5991E11208BD44C00B7A8D0 /* majorSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = majorSelection.swift; sourceTree = "<group>"; };
 		E5991E16208BDBDB00B7A8D0 /* GeneralPollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPollVC.swift; sourceTree = "<group>"; };
 		E5991E18208BDC2C00B7A8D0 /* NewGeneralPollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGeneralPollVC.swift; sourceTree = "<group>"; };
@@ -108,6 +110,8 @@
 		E5E74B222076B77300F4F09B /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		E5E74B472076D45700F4F09B /* ClassPollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassPollVC.swift; sourceTree = "<group>"; };
 		E5E74B492076D48F00F4F09B /* NewClassPollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassPollVC.swift; sourceTree = "<group>"; };
+		E5FCD7DC20ABB030001AF1D6 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		E5FCD7DE20ABBA2E001AF1D6 /* CourseCommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCommentsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,10 +183,12 @@
 				E5E74B492076D48F00F4F09B /* NewClassPollVC.swift */,
 				E543FD6C208D949C00B09CED /* NewClassPollVC02.swift */,
 				E5A9517A208E845500B82377 /* NewClassPollVCFinal.swift */,
-				E573C4F020917D7D00C26EE0 /* CommentsTableVC.swift */,
-				E573C4EE20917CBA00C26EE0 /* CommentCell.swift */,
 				E55C9A7920898FF50087EEF9 /* Classes.swift */,
 				E5B30D3E208592AF00B521E4 /* Class.swift */,
+				E5FCD7DE20ABBA2E001AF1D6 /* CourseCommentsVC.swift */,
+				E5FCD7DC20ABB030001AF1D6 /* Comment.swift */,
+				E574C69720B4663500A95472 /* Comments.swift */,
+				E573C4EE20917CBA00C26EE0 /* CommentCell.swift */,
 			);
 			path = ClassPoll;
 			sourceTree = "<group>";
@@ -288,7 +294,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Bryan Kim";
 				TargetAttributes = {
 					E5E74B082076A98800F4F09B = {
@@ -411,8 +417,10 @@
 				E5B30D3B2085915100B521E4 /* NewMajorPollVC02.swift in Sources */,
 				E5991E12208BD44C00B7A8D0 /* majorSelection.swift in Sources */,
 				E51DE695207E9CA900A58CD0 /* DataHandler.swift in Sources */,
+				E574C69820B4663500A95472 /* Comments.swift in Sources */,
 				E573C4EF20917CBA00C26EE0 /* CommentCell.swift in Sources */,
 				E5991E17208BDBDB00B7A8D0 /* GeneralPollVC.swift in Sources */,
+				E5FCD7DF20ABBA2E001AF1D6 /* CourseCommentsVC.swift in Sources */,
 				E5991E1F208C250C00B7A8D0 /* GeneralPoll.swift in Sources */,
 				E5E74B482076D45700F4F09B /* ClassPollVC.swift in Sources */,
 				E5E74B0F2076A98800F4F09B /* InitialViewController.swift in Sources */,
@@ -427,6 +435,7 @@
 				E573C4ED2091235D00C26EE0 /* ReplyToGeneralPollViewController.swift in Sources */,
 				E503B9CF2079815500B899F4 /* MajorPollVC.swift in Sources */,
 				E5A047B220901EA50026AC11 /* AppMessengerVC.swift in Sources */,
+				E5FCD7DD20ABB030001AF1D6 /* Comment.swift in Sources */,
 				E5A047AA20900C990026AC11 /* Users.swift in Sources */,
 				E5E74B4A2076D48F00F4F09B /* NewClassPollVC.swift in Sources */,
 				E51DE5A6208D01560026BF47 /* GeneralPostTableViewCell.swift in Sources */,
@@ -436,7 +445,6 @@
 				E5B73DAB208E678B00540CD4 /* PreMajorPollViewController.swift in Sources */,
 				E543FD6B208D8C5F00B09CED /* MessagingDetailVC.swift in Sources */,
 				E55C9A7E2089934B0087EEF9 /* ClassPollDetailVC.swift in Sources */,
-				E573C4F120917D7D00C26EE0 /* CommentsTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +484,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -483,6 +492,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -533,6 +543,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -540,6 +551,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -575,7 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PZCR459VC4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FinalProject5/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -592,7 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PZCR459VC4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FinalProject5/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

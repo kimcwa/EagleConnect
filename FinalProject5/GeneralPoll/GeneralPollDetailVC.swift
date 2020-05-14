@@ -10,7 +10,7 @@ import UIKit
 
 class GeneralPollDetailVC: UIViewController {
 
-    @IBOutlet weak var usernameLabel: UILabel!
+
     @IBOutlet weak var subjectLabel: UILabel!
     @IBOutlet weak var postLabel: UILabel!
     

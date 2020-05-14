@@ -23,7 +23,7 @@ class PreMajorPollViewController: UIViewController, SecondDropDownProtocol {
         
         //Configure the button
         button = dropDownBtn.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        button.setTitle("Select Major", for: .normal)
+        button.setTitle("Select Location", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         //Add Button to the View Controller
@@ -37,7 +37,7 @@ class PreMajorPollViewController: UIViewController, SecondDropDownProtocol {
         
         //Set the drop down menu's options
         button.delegate = self
-        button.dropView.dropDownOptions = ["Art History", "American Heritage", "Applied Psychology/Human Dev", "Accounting", "Biology", "Business Analytics", "Chemistry", "Classical Studies", "Communication",   "Computer Science", "Corporate Reporting and Analysis", "Corporate Systems", "Criminal and Social Justice", "Economics", "English", "Environmental Geosciences", "Environmental Studies", "Elementary Education", "Entrepreneurship", "Film Studies", "Finance", "French", "Geological Sciences", "German Studies", "General Science", "General Management", "Hispanic Studies", "History", "International Studies", "Islamic Civil. and Soc.", "Italian", "Information Systems", "Information Systems and Accounting", "Linguistics", "Mathematics", "Music", "Management and Leadership", "Managing for Social Impact/Public Good", "Marketing", "Nursing", "Natural Science", "Operations Management", "Philosophy", "Physics", "Political Science", "Psychology", "Perspectives on Spanish America", "Romance Languages/Literatures", "Russian", "Slavic Studies", "Sociology", "Studio Art", "Secondary Education", "Social Sciences", "Theater", "Theology"
+        button.dropView.dropDownOptions = ["Boston", "Chestnut Hill", "Allston"
         ]
         
     }

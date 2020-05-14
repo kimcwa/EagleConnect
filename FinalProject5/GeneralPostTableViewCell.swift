@@ -12,7 +12,6 @@ class GeneralPostTableViewCell: UITableViewCell {
 
     @IBOutlet weak var subjectLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var postLabel: UILabel!
     
     

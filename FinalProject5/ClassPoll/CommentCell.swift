@@ -11,17 +11,28 @@ import Firebase
 
 class CommentCell: UITableViewCell {
     
-    @IBOutlet weak var usernameLabel: UILabel!
+
     @IBOutlet weak var courseLabel: UILabel!
     @IBOutlet weak var professorLabel: UILabel!
     @IBOutlet weak var postLabel: UILabel!
     
+    var courseLabelS = ""
+    var professorLabelS = ""
+    var postLabelS = ""
+    
     var course: Course!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        courseLabel.text = courseLabelS
+        professorLabel.text = professorLabelS
+        postLabel.text = postLabelS
     }
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

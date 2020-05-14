@@ -12,7 +12,7 @@ import Firebase
 class PostTableViewCell: UITableViewCell {
     
 
-    @IBOutlet weak var usernameLabel: UILabel!
+
     @IBOutlet weak var majorLabel: UILabel!
     @IBOutlet weak var postTextLabel: UILabel!
     @IBOutlet weak var likesLabel: UILabel!

@@ -51,8 +51,13 @@ class ClassPollVC: UIViewController {
             let selectedIndexPath = tableView.indexPathForSelectedRow!
             destination.course = classPosts.courseArray[selectedIndexPath.row]
         } else {
-            if let selectedIndexPath = tableView.indexPathForSelectedRow {
-                tableView.deselectRow(at: selectedIndexPath, animated: true)
+//            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+//                tableView.deselectRow(at: selectedIndexPath, animated: true)
+//            }
+            if segue.identifier == "toComment" { // comment
+                let destination = segue.destination as! CourseCommentsVC // comment
+                let selectedIndexPath = tableView.indexPathForSelectedRow! // comment
+                destination.selectedCourse = classPosts.courseArray[selectedIndexPath.row] // comment
             }
         }
     }
